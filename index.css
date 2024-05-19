@@ -1,14 +1,134 @@
+@media (min-width: 480px) {
+    body {
+      margin: 0;
+      font-size: 21px;
+    }
+    
+    #characterImage {
+        width: 100%; /* Set the width to 100% of the viewport */
+        max-width: none; /* Limit the maximum width */
+        height: auto; /* Automatically adjust height */
+        padding: 10px;
+        display: block;
+        overflow: 0 auto;
+    }
+}
+
+
+@media(min-width: 600px) {
+   
+} 
+
+
 body {
-    /* margin: 5px; */
-    /* this font size will effect all elements (other than h1 -> h6) on the page */
+    
     display: flex;
     flex-direction: column;
-    /* font-size: 21px; */
     max-width: 100vw;
     margin: 8px;
     padding-top: 5px;
+    background-image: url("marvel-red.jpg");
+    background-position: center;
     background-size: cover;
-    background-image: url("marvel-black-and-white.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
     font-family: "Montserrat", sans-serif;
-    font-size: 10px;
+    font-size: 20px;
 }
+
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+
+div.error-container {
+
+    display: flex;
+    justify-content: center;
+margin-top: 1rem;
+}
+/* 
+#error-Message {
+    color: rgb(22, 4, 4);
+    font-size: 14px;
+} */
+
+
+.error-Message {
+    padding: 10px;
+    border-radius: .25rem;
+    display:inline-block;
+    color: #150a0a;
+    background: #b97f7f;
+    border: 1px solid #110f0f;
+    margin-bottom: 4rem;
+    
+}
+  
+#characterDescription {
+    display: none; /* Initially hidden */
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 300;
+    color: #0f0a0b;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+#characterImage {
+  border-radius: 8px;
+  padding: 10px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  flex:1;
+}
+
+#characterImage:hover{
+    box-shadow: 0 0 1px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+  #comicsList {
+    text-align: center;
+    margin: 20px 5px 0 40px; /* Adjust as needed */
+  }
+  
+   h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #0f0a0b;
+  }
+  
+  #comicsList ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #comicsList ul li {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  

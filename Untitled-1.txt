@@ -1,0 +1,7 @@
+
+
+      // Un-comment and complete this part if you want to display the hero's image on the webpage
+      // const heroSection = document.getElementById("hero-Grid");
+      // const hero = document.createElement("img");
+      // hero.src = `${heroData.data.results[0].thumbnail.path}.${heroData.data.results[0].thumbnail.extension}`;
+      // heroSection.appendChild(hero);
