@@ -1,0 +1,240 @@
+@media (min-width: 480px) {
+    body {
+      margin: 0;
+      font-size: 20px;
+    }
+    
+    #characterImage {
+        max-width: none; 
+        height: auto; 
+        padding: 10px;
+        overflow: auto;
+    } 
+
+    #comicsList {     
+      margin: 20px 5px 0 40px;
+     }
+
+     .input-container {
+      position: fixed;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      width: 50%; 
+      margin: 0 auto; 
+  }
+
+  input#character {
+      width: 40%; /* Full width input */
+      font-size: 18px; /* Increase font size */
+  }
+
+}
+
+
+@media(min-width: 600px) {
+  body {
+    font-size: 24px;
+  }
+} 
+
+
+body { 
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    margin: 8px;
+    padding-top: 5px;
+    background-image: url("/images/marvel-red.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 10px;
+    margin: 0 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+
+div.error-container {
+
+    display: flex;
+    justify-content: center;
+margin-top: 1rem;
+}
+
+/* Style the input field */
+#character {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
+
+/* Style for buttons */
+button {
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search {
+  background-color: #4CAF50; 
+  color: white; 
+}
+
+#search:hover {
+  background-color: #45a049; 
+}
+
+#reset {
+  background-color: #f44336; 
+  color: white; 
+ 
+}
+
+#reset:hover {
+  background-color: #e53935; 
+}
+
+.error-Message {
+    padding: 10px;
+    border-radius: .25rem;
+    display:inline-block;
+    color: #150a0a;
+    background: #b97f7f;
+    border: 1px solid #110f0f;
+    margin-bottom: 4rem;
+    
+}
+  
+#characterDescription {
+    display: none; /* Initially hidden */
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: 300;
+    color: #0f0a0b;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#characterImage {
+  border-radius: 6px;
+  padding: 10px;
+  max-width: 100%;
+  max-height: 400px;
+  /* width: 100%; */
+  height: auto;
+  /* display: block; */
+  /* flex-wrap: wrap; */
+  /* overflow: auto; */
+  /* flex: 1; */
+  margin:0 auto;
+}
+
+#characterImage:hover{
+    box-shadow: 0 0 1px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+  #comicsList {
+    /* display: flex;
+    flex-direction: column; */
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 80%;
+    margin: 20px auto; 
+  }
+  
+  #comicsList li{
+    padding: 5px 0;
+  }
+
+   h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #0f0a0b;
+  }
+  
+  #comicsList ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #comicsList ul li {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0f0a0b;
+  }
+
+  #attributionFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+
+  #characterList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #characterList > div {
+    flex: 1 1 20%;  
+    text-align: center;
+  }
+
+  #characterList > div > span {
+    text-decoration: underline;
+  }
+
+    /* CSS styles to make links black */
+    a {
+      color: black;
+      text-decoration: none; /* Remove underline from links */
+    }
